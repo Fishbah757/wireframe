@@ -1,0 +1,11 @@
+.client-info{
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: space-between;
+}
