@@ -24,7 +24,18 @@ class AsideComponent extends Component {
   onSearchUpdate(e){
     let value = e.target.value.toLowerCase();
     let filteredArray = this.props.clientsArray.filter(client => {
-      return (client.general.firstName + ' ' + client.general.lastName).toLowerCase().includes(value);
+      return (
+        client.general.firstName + ' '
+        + client.general.lastName
+        + client.job.title
+        + client.job.company
+        + client.contact.email
+        + client.contact.phone
+        + client.address.street
+        + client.address.city
+        + client.address.zipCode
+        + client.address.country
+      ).toLowerCase().includes(value);
     });
     this.setState({
       searchValue: value,
