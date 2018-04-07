@@ -2,6 +2,7 @@
   text-align: center;
   flex: 3;
   border-right: 1px darkgray solid;
+  max-height: 100%;
 }
 .no-details-title{
   margin-top: 100px;

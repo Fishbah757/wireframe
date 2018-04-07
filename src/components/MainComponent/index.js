@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import ClientDetails from '../ClientDetails';
 
 class MainComponent extends Component {
+  
   render() {
     const { currentClient } = this.props;
     return (
