@@ -16,7 +16,11 @@ class SearchInput extends Component {
             placeholder="Type any client info.."
             onChange={onChange}
           />
-          <img className="search-icon" src={image} alt="search" />
+          <img
+            className="search-icon"
+            src={image}
+            alt="search"
+          />
         </div>
       </div>
     );

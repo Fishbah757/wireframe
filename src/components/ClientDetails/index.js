@@ -9,7 +9,10 @@ class ClientListItem extends Component {
       <div className="details-row">
         <div className="avatar-details-container">
           <div className="client-preview-details-avatar">
-            <img src={client.general.avatar} alt="avatar" />
+            <img
+              src={client.general.avatar}
+              alt="avatar"
+            />
           </div>
         </div>
         <div className="client-details-info">

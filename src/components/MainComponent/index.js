@@ -9,8 +9,7 @@ class MainComponent extends Component {
     const { currentClient } = this.props;
     return (
       <div className="main-wrapper">
-      {
-        this.props.currentClient == null ?
+      { this.props.currentClient == null ?
           <h1 className="no-details-title">Please select client</h1> 
           :
           <div className="details-block">

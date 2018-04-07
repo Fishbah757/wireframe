@@ -48,12 +48,20 @@ class AsideComponent extends Component {
       <div className="aside-wrapper">
         <ul className="clients-list">
         <li>
-          <SearchInput onChange={this.onSearchUpdate} value={this.state.searchValue} />
+          <SearchInput
+            onChange={this.onSearchUpdate}
+            value={this.state.searchValue}
+          />
         </li>
-        {this.state.filteredClients.length > 0 ?
+        { this.state.filteredClients.length > 0 ?       
           this.state.filteredClients.map((client, index) => {
             return (
-              <ClientListItem client={client} background={this.props.chosenClient == client ? 'rgba(170,206,242)' : 'transparent' } key={index} onSelectClient={this.onSelectClient} />
+              <ClientListItem
+                client={client}
+                background={this.props.chosenClient == client ? 'rgba(170,206,242)' : 'transparent' }
+                key={index}
+                onSelectClient={this.onSelectClient}
+              />
             );
           })
           :
