@@ -9,3 +9,9 @@
   align-items: flex-start;
   align-content: space-between;
 }
+.full-client-name{
+  font-size: 24px;
+}
+.client-job{
+  color: #00000080;
+}

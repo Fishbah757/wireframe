@@ -23,3 +23,7 @@
   font-size: 48px;
   color: #00000040;
 }
+.client-general:hover{
+  cursor: pointer;
+  background: rgba(170, 206, 242, 0.2)!important;
+}

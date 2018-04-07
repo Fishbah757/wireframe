@@ -13,7 +13,7 @@ class SearchInput extends Component {
             className="search-input"
             type="text"
             value={value}
-            placeholder="Please type name of client.."
+            placeholder="Type any client info.."
             onChange={onChange}
           />
           <img className="search-icon" src={image} alt="search" />

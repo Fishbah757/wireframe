@@ -7,8 +7,8 @@ class ClientListItem extends Component {
     const { client } = this.props;
     return (
       <div className="details-row">
-        <div className="avatar-container">
-          <div className="client-preview-avatar">
+        <div className="avatar-details-container">
+          <div className="client-preview-details-avatar">
             <img src={client.general.avatar} alt="avatar" />
           </div>
         </div>

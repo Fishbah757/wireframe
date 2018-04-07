@@ -53,7 +53,7 @@ class AsideComponent extends Component {
         {this.state.filteredClients.length > 0 ?
           this.state.filteredClients.map((client, index) => {
             return (
-              <ClientListItem client={client} key={index} onSelectClient={this.onSelectClient} />
+              <ClientListItem client={client} background={this.props.chosenClient == client ? 'rgba(170,206,242)' : 'transparent' } key={index} onSelectClient={this.onSelectClient} />
             );
           })
           :
@@ -69,7 +69,8 @@ class AsideComponent extends Component {
 
 function mapStateToProps(state){
   return {
-    clientsArray: state.clients
+    clientsArray: state.clients,
+    chosenClient: state.currentClient
   };
 }
 
